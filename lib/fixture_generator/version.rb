@@ -1,3 +1,3 @@
-module FixtureGenerator
-  VERSION = "0.0.1"
+class FixtureGenerator
+  VERSION = "0.0.2"
 end

@@ -6,6 +6,8 @@ namespace :fixtures do
     # Work with test db.
     RAILS_ENV = ENV['RAILS_ENV'] = "test"
 
+    require Rails.root + "/lib/" + ENV['GENERATOR'].underscore
+
     # Clean the database first.
     puts "*** FixturePopulator :: Cleaning the database"
     Rake::Task["cleandbtest"].invoke
