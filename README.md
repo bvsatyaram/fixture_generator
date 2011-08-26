@@ -11,14 +11,14 @@ Installation
 Usage
 -----
 
-  class MyFixtureGenerator < FixtureGenerator
-    def populate
-      # Create your records here and add them to the fixture set by calling
-      # 'add_record(record_name, record_object)'. That's it!
+    class MyFixtureGenerator < FixtureGenerator
+      def populate
+        # Create your records here and add them to the fixture set by calling
+        # 'add_record(record_name, record_object)'. That's it!
+      end
     end
-  end
 
-  rake fixtures:generate GENERATOR="MyFixtureGenerator"
+    rake fixtures:generate GENERATOR="MyFixtureGenerator"
 
 Author
 ------
